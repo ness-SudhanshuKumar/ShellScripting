@@ -1,4 +1,3 @@
-A great project idea to understand and showcase production-ready shell scripting using sh (Bourne shell) and ksh (Korn shell) is a "Log File Management and Monitoring System."
 
 This project will allow you to demonstrate the use of shell scripting for automating tasks, managing log files, handling errors, and more. The idea is to create a script or set of scripts that manage and monitor log files, rotate them, and send alerts when certain thresholds are met.
 
@@ -27,8 +26,7 @@ Compress the rotated logs and store them in a backup directory.
 Delete logs older than 30 days.
 Example Code:
 
-sh
-Copy
+
 #!/bin/sh
 
 LOG_DIR="/var/log/myapp"
@@ -73,8 +71,7 @@ Monitor logs for specific keywords like "ERROR," "CRITICAL," or custom applicati
 Send alerts via email or Slack when those keywords are found.
 Example Code:
 
-sh
-Copy
+
 #!/bin/sh
 
 LOG_FILE="/var/log/myapp/myapp.log"
@@ -96,19 +93,16 @@ Set Up Cron Jobs for Automation
 Automate the execution of the scripts at regular intervals using cron.
 Example crontab entries:
 Rotate logs every day at midnight:
-bash
-Copy
+
 0 0 * * * /path/to/log_rotate.sh
 Monitor logs every hour:
-bash
-Copy
+
 0 * * * * /path/to/log_monitor.sh
 Backup and Clean Old Logs (log_backup.sh)
 
 Create a backup of log files and archive old logs that are no longer needed.
 Example Code:
-sh
-Copy
+
 #!/bin/sh
 
 LOG_DIR="/var/log/myapp"
