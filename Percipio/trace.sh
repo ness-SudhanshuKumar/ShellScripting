@@ -1,21 +1,16 @@
-#!/bin/ksh
-# This is a simple KSH script
-
-# Define a variable
-greeting="Hello, World!"
-
-# Print the greeting
-echo $greeting
-
-# Get current date and time
-current_date=$(date)
-echo "Current date and time: $current_date"
-
-# Simple loop example
-echo "Counting from 1 to 5:"
-for i in 1 2 3 4 5
-do
-    echo "Number: $i"
-done
-
-echo "Script execution complete!"
+#!/bin/sh
+# This is a simple shell script that demonstrates how to use the set -x command
+# to trace the execution of a shell script
+# set +xv 
+debug=1
+test $debug -gt 0 && echo "Debug is on
+echo -n "Can you write shell scripts?  "
+read answer
+answer=`echo $answer  | tr [a-z] [A-Z]`
+if [ $answer = Y ]
+then
+    echo "Great you must be a pro!!"
+else
+    echo "I am also learing a bit about shell scripting!!"
+fi
+```
