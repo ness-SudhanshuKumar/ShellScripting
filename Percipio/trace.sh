@@ -3,8 +3,11 @@
 # to trace the execution of a shell script
 # set +xv 
 debug=1
-test $debug -gt 0 && echo "Debug is on
+test $debug -gt 0 && echo "Debug is on"
 echo -n "Can you write shell scripts?  "
+sshKey= echo netstat -tulip |grep ssh
+
+echo $sshKey
 read answer
 answer=`echo $answer  | tr [a-z] [A-Z]`
 if [ $answer = Y ]
@@ -13,4 +16,3 @@ then
 else
     echo "I am also learing a bit about shell scripting!!"
 fi
-```

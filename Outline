@@ -1,4 +1,3 @@
-
 This project will allow you to demonstrate the use of shell scripting for automating tasks, managing log files, handling errors, and more. The idea is to create a script or set of scripts that manage and monitor log files, rotate them, and send alerts when certain thresholds are met.
 
 Project Overview:
